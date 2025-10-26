@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+.cv-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 1.2em 0 0.5em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0.1em 0;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 1.2em;
+}
+
+li {
+  margin: 0.3em 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-column {
+  flex: 1 1 30%;
+  min-width: 200px;
+}
+
+.skill-column ul {
+  margin-bottom: 0;
+}
+
+.tech-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.5em;
+}
+
+.tech-skill {
+  background: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
